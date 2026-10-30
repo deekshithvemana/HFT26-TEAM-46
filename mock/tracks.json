@@ -1,0 +1,71 @@
+{
+  "video_id": "demo_dashcam_01_a9f2bc41",
+  "fps": 25.0,
+  "start_offset_s": 0.0,
+  "n_tracks": 2,
+  "tracks": [
+    {
+      "track_id": 1,
+      "class": "car",
+      "class_name": "black_SUV",
+      "first_frame": 0,
+      "last_frame": 125,
+      "avg_conf": 0.89
+    },
+    {
+      "track_id": 2,
+      "class": "car",
+      "class_name": "white_SUV",
+      "first_frame": 40,
+      "last_frame": 80,
+      "avg_conf": 0.91
+    }
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "objects": [
+        {"track_id": 1, "class": "car", "bbox": [280, 210, 390, 320], "conf": 0.92, "centre": [335, 265]}
+      ]
+    },
+    {
+      "frame": 25,
+      "time_s": 1.0,
+      "objects": [
+        {"track_id": 1, "class": "car", "bbox": [290, 205, 410, 325], "conf": 0.94, "centre": [350, 265]}
+      ]
+    },
+    {
+      "frame": 45,
+      "time_s": 1.8,
+      "objects": [
+        {"track_id": 1, "class": "car", "bbox": [300, 200, 430, 330], "conf": 0.93, "centre": [365, 265]},
+        {"track_id": 2, "class": "car", "bbox": [520, 220, 620, 310], "conf": 0.88, "centre": [570, 265]}
+      ]
+    },
+    {
+      "frame": 60,
+      "time_s": 2.4,
+      "objects": [
+        {"track_id": 1, "class": "car", "bbox": [320, 195, 460, 340], "conf": 0.95, "centre": [390, 267]},
+        {"track_id": 2, "class": "car", "bbox": [440, 205, 560, 320], "conf": 0.92, "centre": [500, 262]}
+      ]
+    },
+    {
+      "frame": 70,
+      "time_s": 2.8,
+      "objects": [
+        {"track_id": 1, "class": "car", "bbox": [360, 190, 500, 345], "conf": 0.96, "centre": [430, 267]},
+        {"track_id": 2, "class": "car", "bbox": [410, 195, 540, 335], "conf": 0.94, "centre": [475, 265]}
+      ]
+    },
+    {
+      "frame": 90,
+      "time_s": 3.6,
+      "objects": [
+        {"track_id": 1, "class": "car", "bbox": [375, 192, 510, 346], "conf": 0.95, "centre": [442, 269]}
+      ]
+    }
+  ]
+}

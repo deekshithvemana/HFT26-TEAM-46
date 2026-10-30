@@ -1,0 +1,162 @@
+[
+  {
+    "id": "L-01",
+    "finding_id": "F-01",
+    "linked_ids": [
+      "W2-C4",
+      "S-01",
+      "V-03"
+    ],
+    "status": "contradict",
+    "confidence": 0.95,
+    "explanation": "Contradiction identified: Claim W2-C4 states 'never braked before the impact', directly conflicting with telemetry S-01 recording -7.8 m/s^2 deceleration and video V-03 confirming active brake lamp illumination.",
+    "missing_info": null,
+    "metadata": {
+      "claim_text": "never braked before the impact",
+      "sensor_deceleration_mps2": -7.8,
+      "conflict_modality": "witness_vs_sensor_and_video"
+    }
+  },
+  {
+    "id": "L-02",
+    "finding_id": "F-02",
+    "linked_ids": [
+      "W1-C1",
+      "S-03",
+      "V-01"
+    ],
+    "status": "support",
+    "confidence": 0.9,
+    "explanation": "Corroborating evidence: Claim W1-C1 reports black SUV was speeding. Supported by telemetry rapid speed drop (34.9 km/h) and video tracking velocity benchmark (V-01).",
+    "missing_info": null,
+    "metadata": {
+      "vehicle": "black SUV"
+    }
+  },
+  {
+    "id": "L-03",
+    "finding_id": "F-03",
+    "linked_ids": [
+      "W2-C2",
+      "S-03",
+      "V-01"
+    ],
+    "status": "support",
+    "confidence": 0.9,
+    "explanation": "Corroborating evidence: Claim W2-C2 reports black SUV was speeding. Supported by telemetry rapid speed drop (34.9 km/h) and video tracking velocity benchmark (V-01).",
+    "missing_info": null,
+    "metadata": {
+      "vehicle": "black SUV"
+    }
+  },
+  {
+    "id": "L-04",
+    "finding_id": "F-04",
+    "linked_ids": [
+      "W2-C1",
+      "W1-C2",
+      "V-02"
+    ],
+    "status": "contradict",
+    "confidence": 0.92,
+    "explanation": "Contradiction identified: Claim W2-C1 asserts white SUV was stationary at intersection, conflicting with witness W1-C2 and video track V-02 capturing vehicle entering in active motion.",
+    "missing_info": "Pre-intersection roadway signal phase logs (traffic light phase at t=1.5s - 2.0s).",
+    "metadata": {
+      "conflict_type": "pre_impact_motion_state"
+    }
+  },
+  {
+    "id": "L-05",
+    "finding_id": "F-05",
+    "linked_ids": [
+      "W1-C3",
+      "S-02",
+      "V-04"
+    ],
+    "status": "support",
+    "confidence": 0.96,
+    "explanation": "Collision corroborated: Claim W1-C3 ('collided with it') matches accelerometer lateral shock of 12.4 m/s^2 and video bounding box contact geometry at t=2.7s.",
+    "missing_info": null,
+    "metadata": {
+      "impact_time_s": 2.8
+    }
+  },
+  {
+    "id": "L-06",
+    "finding_id": "F-06",
+    "linked_ids": [
+      "W2-C3",
+      "S-02",
+      "V-04"
+    ],
+    "status": "support",
+    "confidence": 0.96,
+    "explanation": "Collision corroborated: Claim W2-C3 ('never braked before the impact') matches accelerometer lateral shock of 12.4 m/s^2 and video bounding box contact geometry at t=2.7s.",
+    "missing_info": null,
+    "metadata": {
+      "impact_time_s": 2.8
+    }
+  },
+  {
+    "id": "L-07",
+    "finding_id": "F-07",
+    "linked_ids": [
+      "W1-C4",
+      "V-05"
+    ],
+    "status": "support",
+    "confidence": 0.91,
+    "explanation": "Kinematic rotation corroborated: Witness report of rotation in W1-C4 aligns with video track V-05 recording centroid yaw rotation following the collision point.",
+    "missing_info": null,
+    "metadata": {
+      "rotation_degrees": 42.0
+    }
+  },
+  {
+    "id": "L-08",
+    "finding_id": "F-08",
+    "linked_ids": [
+      "W1-C5",
+      "S-04",
+      "V-06"
+    ],
+    "status": "support",
+    "confidence": 0.98,
+    "explanation": "Vehicle rest corroborated: Claim W1-C5 ('stopped after the collision') corroborated by sensor event S-04 (0.0 km/h) and video confirmation V-06 at t=3.6s.",
+    "missing_info": null,
+    "metadata": {
+      "final_speed_kmh": 0.0
+    }
+  },
+  {
+    "id": "L-09",
+    "finding_id": "F-09",
+    "linked_ids": [
+      "S-01",
+      "V-03"
+    ],
+    "status": "support",
+    "confidence": 0.97,
+    "explanation": "Telemetry-Video correlation: Telemetry brake event S-01 (-7.8 m/s^2 at t=2.4s) coincides with video event V-03 observing brake lamp activation.",
+    "missing_info": null,
+    "metadata": {}
+  },
+  {
+    "id": "L-10",
+    "finding_id": "F-10",
+    "linked_ids": [
+      "W1-C2",
+      "V-02"
+    ],
+    "status": "gap",
+    "confidence": 0.72,
+    "explanation": "Evidence gap identified: Cross-street entrance angle for white SUV was obscured by corner structural elements prior to t=1.6s. Telemetry unavailable for non-ego vehicle.",
+    "missing_info": "Infrastructure CCTV or secondary vehicle EDR telemetry required to measure pre-entrance speed.",
+    "metadata": {
+      "gap_interval_s": [
+        0.0,
+        1.6
+      ]
+    }
+  }
+]

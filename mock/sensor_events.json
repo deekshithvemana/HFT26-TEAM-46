@@ -1,0 +1,46 @@
+[
+  {
+    "id": "S-01",
+    "event_type": "hard_braking",
+    "time": 2.4,
+    "value": -7.8,
+    "unit": "m/s^2",
+    "source_row": 14,
+    "confidence": 0.96,
+    "kind": "derived_measurement",
+    "vehicle_ref": "black_SUV"
+  },
+  {
+    "id": "S-02",
+    "event_type": "impact_spike",
+    "time": 2.8,
+    "value": 12.4,
+    "unit": "m/s^2",
+    "source_row": 16,
+    "confidence": 0.98,
+    "kind": "derived_measurement",
+    "vehicle_ref": "black_SUV"
+  },
+  {
+    "id": "S-03",
+    "event_type": "speed_drop",
+    "time": 2.8,
+    "value": 34.9,
+    "unit": "km/h_drop",
+    "source_row": 16,
+    "confidence": 0.94,
+    "kind": "derived_measurement",
+    "vehicle_ref": "black_SUV"
+  },
+  {
+    "id": "S-04",
+    "event_type": "vehicle_stop",
+    "time": 3.6,
+    "value": 0.0,
+    "unit": "km/h",
+    "source_row": 20,
+    "confidence": 0.99,
+    "kind": "derived_measurement",
+    "vehicle_ref": "black_SUV"
+  }
+]

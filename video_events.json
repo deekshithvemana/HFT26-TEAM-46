@@ -1,0 +1,98 @@
+[
+  {
+    "id": "V-01",
+    "event_type": "speeding",
+    "start_time": 0.5,
+    "end_time": 1.8,
+    "track_ids": [1],
+    "confidence": 0.88,
+    "evidence_ref": {
+      "frame_start": 12,
+      "frame_end": 45,
+      "keyframe": "keyframes/frame_0025.jpg"
+    },
+    "kind": "derived_measurement",
+    "vehicle_ref": "black_SUV",
+    "description": "Track 1 (black SUV) closing velocity exceeds roadway benchmark."
+  },
+  {
+    "id": "V-02",
+    "event_type": "approach",
+    "start_time": 1.6,
+    "end_time": 2.3,
+    "track_ids": [2],
+    "confidence": 0.90,
+    "evidence_ref": {
+      "frame_start": 40,
+      "frame_end": 58,
+      "keyframe": "keyframes/frame_0050.jpg"
+    },
+    "kind": "observation",
+    "vehicle_ref": "white_SUV",
+    "description": "Track 2 (white SUV) enters frame from right-side intersection lane in motion."
+  },
+  {
+    "id": "V-03",
+    "event_type": "sudden_braking",
+    "start_time": 2.1,
+    "end_time": 2.7,
+    "track_ids": [1],
+    "confidence": 0.86,
+    "evidence_ref": {
+      "frame_start": 52,
+      "frame_end": 68,
+      "keyframe": "keyframes/frame_0060.jpg"
+    },
+    "kind": "observation",
+    "vehicle_ref": "black_SUV",
+    "description": "Track 1 visual pitch dip and taillamp illumination consistent with emergency braking."
+  },
+  {
+    "id": "V-04",
+    "event_type": "collision",
+    "start_time": 2.7,
+    "end_time": 2.9,
+    "track_ids": [1, 2],
+    "confidence": 0.94,
+    "evidence_ref": {
+      "frame_start": 68,
+      "frame_end": 74,
+      "keyframe": "keyframes/frame_0070.jpg"
+    },
+    "kind": "observation",
+    "vehicle_ref": "black_SUV",
+    "description": "Bounding box IoU spike and contact geometry between Track 1 and Track 2."
+  },
+  {
+    "id": "V-05",
+    "event_type": "rotation",
+    "start_time": 2.8,
+    "end_time": 3.4,
+    "track_ids": [1],
+    "confidence": 0.91,
+    "evidence_ref": {
+      "frame_start": 70,
+      "frame_end": 85,
+      "keyframe": "keyframes/frame_0078.jpg"
+    },
+    "kind": "derived_measurement",
+    "vehicle_ref": "black_SUV",
+    "description": "Track 1 centroid angular velocity indicates 42-degree clockwise yaw rotation."
+  },
+  {
+    "id": "V-06",
+    "event_type": "post_impact_stop",
+    "start_time": 3.6,
+    "end_time": 5.0,
+    "track_ids": [1],
+    "confidence": 0.96,
+    "evidence_ref": {
+      "frame_start": 90,
+      "frame_end": 125,
+      "keyframe": "keyframes/frame_0100.jpg"
+    },
+    "kind": "observation",
+    "vehicle_ref": "black_SUV",
+    "description": "Track 1 reaches zero optical flow and remains stationary within roadway boundary."
+  }
+]
