@@ -242,7 +242,14 @@ def track_video(
     try:
         import torch
 
-        device = "cuda" if torch.cuda.is_available() else "cpu"
+        # Prefer NVIDIA CUDA when available; otherwise use Apple's Metal
+        # Performance Shaders (MPS) on Apple Silicon Macs; fall back to CPU.
+        if torch.cuda.is_available():
+            device = "cuda"
+        elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+            device = "mps"
+        else:
+            device = "cpu"
     except ImportError:
         device = "cpu"
     predictor = predict or (
